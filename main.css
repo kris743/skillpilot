@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin:auto;
+  padding: 20px;
+}
+.container img{
+  height:150px;
+  width:150px;
+}
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background: #222;
+  color: #fff;
+  
+}
+header h1 {
+  float: left;
+}
+nav ul {
+  padding-top:15px;
+  list-style: none;
+  float: right;
+}
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #fff;
+  color: #0077cc;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.features, .courses, .testimonials, .cta {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.features h3, .courses h3, .testimonials h3, .cta h2 {
+  margin-bottom: 20px;
+}
+.feature-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.feature i {
+  font-size: 40px;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+.testimonials blockquote {
+  font-style: italic;
+  padding: 20px;
+  border-left: 4px solid #0077cc;
+  background: #eef6fc;
+}
+#cta.cta{
+  padding:20px;
+}
+.cta .btn {
+  padding-top:40px;
+  background: #0077cc;
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .feature-box {
+    flex-direction: column;
+  }
+  nav ul {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+.cta p{
+    margin-bottom:30px;
+}
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 999;
+}
+
+#chat-window {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#chat-messages {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+#chat-messages div {
+  margin-bottom: 10px;
+}
+
+#chat-input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#chat-window button {
+  width: 25%;
+  padding: 8px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.user {
+  text-align: right;
+}
+
+.ai {
+  text-align: left;
+}
